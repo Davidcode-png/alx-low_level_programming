@@ -5,25 +5,23 @@
  *
  * Return: Always 0.
  */
+void print_alphabet_x10(void)
+{
+int alphabet;
+int counter;
 
 
-void print_alphabet(void)
+counter = 0;
+while (counter < 10)
 {
-int letter;
-for (letter = 'a'; letter <= 'z'; letter++)
+for (alphabet = 'a' ; alphabet <= 'z'; alphabet++)
 {
-_putchar (letter);
-}
-_putchar (10);
+_putchar(alphabet);
 }
 
-int main(void)
-{
-int i;
-for (i=0;i<10;i++)
-{
-print_alphabet();
+counter++;
+_putchar('\n');
 }
-  
-  return(0);
+
+
 }
